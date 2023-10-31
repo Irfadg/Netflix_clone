@@ -27,7 +27,7 @@ class MainScreen extends StatelessWidget {
       body: ValueListenableBuilder(valueListenable: indexChangeNotfyer, builder: (context, int index, _) {
         return pages[index];
       },),
-      bottomNavigationBar: BottomNavigationBarWidget( ),
+      bottomNavigationBar: const BottomNavigationBarWidget( ),
     );
   }
 }
