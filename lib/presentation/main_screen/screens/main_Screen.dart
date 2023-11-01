@@ -1,5 +1,5 @@
 
-// ignore_for_file: must_be_immutable
+// ignore_for_file: must_be_immutable, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:learning_app/presentation/downloads/screens/downloads_screen.dart';
@@ -12,7 +12,7 @@ import 'package:learning_app/presentation/search/screens/search_screen.dart';
 class MainScreen extends StatelessWidget {
    MainScreen({super.key});
 
- List pages =const [
+ List pages = [
     HomePage(),
     HoteAndNewMain(),
     FastLaughsMain(),
