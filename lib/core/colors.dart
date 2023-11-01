@@ -7,3 +7,4 @@ const mainGrey = Colors.grey;
 const buttenBgColorBlue = Colors.blue;
 const buttenBgColorwhite = Colors.white;
 const buttennbackGroundColor = Colors.black;
+const textGreyColor = Colors.grey;
