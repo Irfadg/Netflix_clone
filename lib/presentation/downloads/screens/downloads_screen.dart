@@ -5,7 +5,13 @@ import 'package:learning_app/presentation/widgets/appbar_widget.dart';
 import '../widgets/widgets.dart';
 
 class DowloadsMain extends StatelessWidget {
-  const DowloadsMain({super.key});
+  DowloadsMain({super.key});
+
+  final downloadwidgetList = [
+    SmartDownloadWidget(),
+    MiddleimageSectionWidget(),
+    ButtenSectionWidgets(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +20,12 @@ class DowloadsMain extends StatelessWidget {
           appBar: PreferredSize(
               preferredSize: Size.fromHeight(50),
               child: AppBarWidget(title: 'Download')),
-          body: ListView(
-            children: [
-              SmartDownloadWidget(),
-              MiddleimageSectionWidget(),
-              ButtenSectionWidgets(),
-            ],
+          body: ListView.builder(
+           // padding: EdgeInsets.only(left: 10,right: 10),
+            itemBuilder: (context, index) {
+              return downloadwidgetList[index];
+            },
+            itemCount: downloadwidgetList.length,
           )),
     );
   }
