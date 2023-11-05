@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:learning_app/core/colors.dart';
-import 'package:learning_app/presentation/widgets/common_widgets.dart';
+import 'package:learning_app/presentation/common_app_widgets/common_widgets.dart';
 
 class AppBarWidget extends StatelessWidget {
 final  String title;

@@ -9,6 +9,8 @@ import 'package:learning_app/presentation/hotAndNew/screens/hote_and_new_screen.
 import 'package:learning_app/presentation/main_screen/widget/bottomNavigationBar.dart';
 import 'package:learning_app/presentation/search/screens/search_screen.dart';
 
+import '../../search/widgets/search_idel.dart';
+
 class MainScreen extends StatelessWidget {
    MainScreen({super.key});
 
@@ -16,6 +18,7 @@ class MainScreen extends StatelessWidget {
     HomePage(),
     HoteAndNewMain(),
     FastLaughsMain(),
+    //SearchBarwithHeading(),
     SearchScreen(),
     DowloadsMain()
   ];

@@ -2,7 +2,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../../core/colors.dart';
-import '../../widgets/common_widgets.dart';
+import '../../common_app_widgets/common_widgets.dart';
 
 class SmartDownloadWidget extends StatelessWidget {
   const SmartDownloadWidget({
@@ -84,8 +84,12 @@ class MiddleimageSectionWidget extends StatelessWidget {
             children: [
               Center(
                 child: CircleAvatar(
-                  backgroundColor: Colors.grey.withOpacity(.7),
-                  radius: size.width * .4,
+                   backgroundColor: Colors.blueAccent[700],
+                    radius: size.width * .45,
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: size.width * .39,
+                  ),
                 ),
               ),
               Positioned(
