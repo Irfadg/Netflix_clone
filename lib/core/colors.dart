@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 const backGroundColor = Colors.black;
 const mainWhite = Colors.white;
 const mainGrey = Colors.grey;
+const StextGreyColor = Colors.grey;
 final buttenBgColorBlue = Colors.blueAccent[700];
 const buttenBgColorwhite = Colors.white;
 const buttennbackGroundColor = Colors.black;
