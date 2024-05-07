@@ -1,8 +1,10 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:learning_app/core/colors.dart';
+
 
 import 'package:learning_app/presentation/main_screen/screens/main_Screen.dart';
+
+import 'helper/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Netflix clone',
       theme: ThemeData(
         scaffoldBackgroundColor: backGroundColor,
-        //  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
           textTheme: const TextTheme(
             bodyLarge: TextStyle(color: mainWhite),
