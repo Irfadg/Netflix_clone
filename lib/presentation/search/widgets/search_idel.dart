@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable
 
 import 'package:flutter/cupertino.dart';
-import 'package:learning_app/core/colors.dart';
 import 'package:learning_app/presentation/common_app_widgets/common_widgets.dart';
 import 'package:learning_app/presentation/search/widgets/search_result_widget.dart';
+
+import '../../../helper/colors.dart';
 
 //const String dummyMovieURL = 'https://www.themoviedb.org/t/p/w250_and_h141_face/56v2KjBlU4XaOv9rVYEQypROD7P.jpg';
 final List imageList = [
@@ -84,6 +85,7 @@ class SearchTextFeild extends StatelessWidget {
       //   print("afjhsdfusdfuiqsdqfdihfuisf");
       //   SearchResultWidget();
       // },
+      
       suffixIcon: Icon(
         CupertinoIcons.xmark_circle_fill,
         color: searchScreenIconCLR,
@@ -127,7 +129,7 @@ class SearchIdelWidget extends StatelessWidget {
 
 class TopSearchTile extends StatelessWidget {
   final int index;
-  TopSearchTile({super.key, required this.index});
+  const TopSearchTile({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

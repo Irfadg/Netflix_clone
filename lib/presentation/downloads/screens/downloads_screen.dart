@@ -15,18 +15,20 @@ class DowloadsMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: PreferredSize(
-            preferredSize: Size.fromHeight(50),
-            child: AppBarWidget(title: 'Download')),
-        body: SafeArea(
-          child: ListView.builder(
-           // padding: EdgeInsets.only(left: 10,right: 10),
-            itemBuilder: (context, index) {
-              return downloadwidgetList[index];
-            },
-            itemCount: downloadwidgetList.length,
-          ),
-        ));
+    return SafeArea(
+      child: Scaffold(
+          appBar: PreferredSize(
+              preferredSize: Size.fromHeight(50),
+              child: AppBarWidget(title: 'Download')),
+          body: SafeArea(
+            child: ListView.builder(
+             // padding: EdgeInsets.only(left: 10,right: 10),
+              itemBuilder: (context, index) {
+                return downloadwidgetList[index];
+              },
+              itemCount: downloadwidgetList.length,
+            ),
+          )),
+    );
   }
 }

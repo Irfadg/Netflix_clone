@@ -2,9 +2,10 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:learning_app/core/colors.dart';
 import 'package:learning_app/presentation/search/widgets/search_idel.dart';
 import 'package:gap/gap.dart';
+
+import '../../../helper/colors.dart';
 
 class VideoWidget extends StatelessWidget {
   final int index;

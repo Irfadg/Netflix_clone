@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:learning_app/core/colors.dart';
 import 'package:learning_app/presentation/common_app_widgets/common_widgets.dart';
+
+import '../../helper/colors.dart';
 
 class AppBarWidget extends StatelessWidget {
 final  String title;
